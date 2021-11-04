@@ -10,7 +10,7 @@ on:
         required: true
 jobs:
   bump-formula-version:
-    name: Bump Homebrew formula verion
+    name: Bump Homebrew formula version
     runs-on: macOS-latest
     steps:
       - name: Checkout
