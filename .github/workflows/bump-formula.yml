@@ -1,0 +1,22 @@
+name: Bump formula
+on:
+  workflow_dispatch:
+    inputs:
+      formula:
+        description: 'formula name'
+        required: true
+      version:
+        description: 'formula version'
+        required: true
+jobs:
+  bump-formula-version:
+    name: Bump Homebrew formula verion
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Bump formula
+        run: ./.github/scripts/bump-formula.sh
+        env:
+          FORMULA_NAME: ${{ github.event.inputs.formula }}
+          FORMULA_VERSION: ${{ github.event.inputs.version }}
