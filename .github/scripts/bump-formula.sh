@@ -7,7 +7,7 @@
 set -eo pipefail
 
 # Install tap repository
-brew tap RedMadRobot/formulae --shallow
+brew tap RedMadRobot/formulae
 # The path to the formula in tap
 FORMULA_PATH=$(brew formula "$FORMULA_NAME")
 
