@@ -7,7 +7,7 @@
 set -eo pipefail
 
 # Install tap repository
-brew tap RedMadRobot/formulae ./
+brew tap RedMadRobot/formulae
 # The path to the formula in tap
 FORMULA_PATH=$(brew formula "$FORMULA_NAME")
 
@@ -16,7 +16,7 @@ FORMULA_PATH=$(brew formula "$FORMULA_NAME")
 brew bump-formula-pr \
   --no-browse \
   --no-audit \
-  --write \
+  --write-only \
   --no-fork \
   --version "$FORMULA_VERSION" \
   "$FORMULA_NAME"
