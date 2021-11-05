@@ -7,19 +7,17 @@
 set -eo pipefail
 
 # Install tap repository
-brew tap RedMadRobot/formulae ./
+brew tap RedMadRobot/formulae --shallow
 # The path to the formula in tap
 FORMULA_PATH=$(brew formula "$FORMULA_NAME")
 
 # Bump formula version in tap repo
 # in latest brew `--write` renamed to `--write-only`
 brew bump-formula-pr \
-  --verbose \
   --debug  \
-  --force \
   --no-browse \
   --no-audit \
-  --write \
+  --write-only \
   --no-fork \
   --version "$FORMULA_VERSION" \
   "$FORMULA_NAME"
