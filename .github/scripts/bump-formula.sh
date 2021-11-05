@@ -11,6 +11,9 @@ brew tap RedMadRobot/formulae
 # The path to the formula in tap
 FORMULA_PATH=$(brew formula "$FORMULA_NAME")
 
+# Copy the old formula to tap repo
+cp "$FORMULA_NAME".rb "$FORMULA_PATH" # TODO: remove, only test
+
 # Bump formula version in tap repo
 # in latest brew `--write` renamed to `--write-only`
 brew bump-formula-pr \
