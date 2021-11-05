@@ -15,6 +15,7 @@ FORMULA_PATH=$(brew formula "$FORMULA_NAME")
 # in latest brew `--write` renamed to `--write-only`
 brew bump-formula-pr \
   --verbose \
+  --debug  \
   --force \
   --no-browse \
   --no-audit \
