@@ -13,7 +13,9 @@ FORMULA_PATH=$(brew formula "$FORMULA_NAME")
 
 # Bump formula version in tap repo
 # in latest brew `--write` renamed to `--write-only`
-brew bump-formula-pr --verbose \
+brew bump-formula-pr \
+  --verbose \
+  --force \
   --no-browse \
   --no-audit \
   --write \
