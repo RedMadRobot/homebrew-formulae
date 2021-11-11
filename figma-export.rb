@@ -3,6 +3,7 @@ class FigmaExport < Formula
   homepage "https://github.com/RedMadRobot/figma-export"
   version "0.31.1"
   url "https://github.com/RedMadRobot/figma-export/releases/download/0.31.1/figma-export.zip"
+  sha256 "2f3f57755c4167bfa5534b726cc29a929d58ef94605435284e836b32c1101bd8"
 
   def install
     bin.install "Release/figma-export"
