@@ -1,8 +1,8 @@
 class Catbird < Formula
   desc "Mock server for UI tests"
   homepage "https://github.com/RedMadRobot/catbird"
-  url "https://github.com/RedMadRobot/catbird/releases/download/0.8.1/catbird.zip"
-  sha256 "7356e7851a20723a7c84438dfbe246415674a04f7d58bf114b6fc870b3ed1a70"
+  url "https://github.com/RedMadRobot/catbird/releases/download/0.8.2/catbird.zip"
+  sha256 "9d3a468c71a64f43c839c7918f158827d9caa25191065299ffa05147cfe48957"
 
   bottle :unneeded
 
