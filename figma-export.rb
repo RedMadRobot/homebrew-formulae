@@ -1,8 +1,8 @@
 class FigmaExport < Formula
   desc "Command line utility to export colors, typography, icons and images from Figma to Xcode / Android Studio project."
   homepage "https://github.com/RedMadRobot/figma-export"
-  url "https://github.com/RedMadRobot/figma-export/releases/download/0.31.2/figma-export.zip"
-  sha256 "0f5367417f3d0ac98aa04a6d3ae1fde39b52e7bba9ddc852840bf78ea8753259"
+  url "https://github.com/RedMadRobot/figma-export/releases/download/0.31.3/figma-export.zip"
+  sha256 "937f8d294acb937755000abe8bacb4114f537ca5d06848259304f9d1a6d15d53"
 
   def install
     bin.install "Release/figma-export"
