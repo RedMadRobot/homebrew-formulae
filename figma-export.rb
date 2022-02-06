@@ -7,6 +7,8 @@ class FigmaExport < Formula
   def install
     bin.install "Release/figma-export"
     bin.install "Release/vd-tool/bin/vd-tool"
+    bin.install "Release/figma-export_AndroidExport.bundle"
+    bin.install "Release/figma-export_XcodeExport.bundle"
     lib.install "Release/vd-tool/lib/FastInfoset-1.2.15.jar"
     lib.install "Release/vd-tool/lib/aapt2-proto-4.1.0-alpha01-6193524.jar"
     lib.install "Release/vd-tool/lib/animal-sniffer-annotations-1.18.jar"
